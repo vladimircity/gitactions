@@ -12,6 +12,8 @@ jobs:
       - run: echo "The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - name: Show python version
         run: 'python3 --version'
+      - name: Show pip version
+        run: 'pip3 --version'
       - name: Check out repository code
         uses: actions/checkout@v3
       - run: echo "The ${{ github.repository }} repository has been cloned to the runner."
