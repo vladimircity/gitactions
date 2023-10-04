@@ -12,6 +12,9 @@ jobs:
       - run: echo "The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - name: Show python version
         run: 'python3 --version'
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
       - name: Install dependencies
         run: "pip3 install -r requirements.txt"
       - name: Check out repository code
