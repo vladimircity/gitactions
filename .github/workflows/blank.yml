@@ -13,8 +13,7 @@ jobs:
       - name: Show python version
         run: 'python3 --version'
       - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
+        run:  'ls'
       - name: Install dependencies
         run: "pip3 install -r requirements.txt"
       - name: Check out repository code
